@@ -1,1 +1,129 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .main_body {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f6f7ff;
+        }
+
+        .box {
+            position: relative;
+            width: 450px;
+            border-radius: 5px;
+            box-shadow: 4px 6px 10px #00000010;
+            background-color: #fff;
+        }
+
+        .box_head {
+            position: relative;
+            padding: 18px;
+            border-bottom: 2px solid #eee;
+            background: #3f51b5;
+        }
+
+        .box_head h2 {
+            font-weight: 100;
+            color: #ffffff;
+            font-size: 20px;
+        }
+
+        .box_body {
+            padding: 30px 25px;
+        }
+
+        button.btn {
+            position: relative;
+            display: block;
+            padding: 15px;
+            width: 100%;
+            font-size: 17px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            background: #3f51b5;
+            border-radius: 4px;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            margin: 20px 0px;
+        }
+
+        input {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #727171;
+            font-size: 17px;
+            color: #727171;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #727171;
+            letter-spacing: 0.2px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 100;
+            padding: 10px 20px;
+            background: #429b46;
+            border-radius: 5px;
+            width: fit-content;
+            color: #fff;
+        }
+        .alert { 
+            position: relative;
+            padding: 20px 10px;
+            background: #ff9800;
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_body">
+        <div class="box">
+            <div class="box_head">
+                <h2>Roman Number Converter</h2>
+            </div>
+            <div class="box_body">
+                <div class="alert">Convert Roman Number Between 1 To 10000</div>
+                <form id="form">
+                    <label for="">Number</label>
+                    <input id="number" type="number" min="1" max="10000" placeholder="Enter Number...">
+                    <button class="btn" id="btn">Convert</button>
+                </form>
+                <h3 id="result">Number - IV</h3>
+            </div>
+        </div>
+    </div>
+    <script src="Public/js/main.js"></script>
+</body>
+</html>
