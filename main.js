@@ -1,3 +1,8 @@
+const input = document.getElementById('number');
+const btn = document.getElementById('btn');
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+
 function convertToRoman(number) {
     var firstChr,secondChr,thirdChr,fourthChr,fifthChr;
     var myNum = '';
@@ -135,3 +140,8 @@ function convertToRoman(number) {
     console.log(romanNumber.join(""));
     return romanNumber.join("");
 }
+
+input.addEventListener('keyup',() =>{
+    var val = input.value;
+    result.innerText = convertToRoman(val);
+})
